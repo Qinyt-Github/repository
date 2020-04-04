@@ -1,0 +1,30 @@
+$ git config --global user.name "Your Name"
+    设置git 全局用户名
+$ git config --global user.email "email@example.com"
+    设置git 全局邮箱
+$ git init
+    将当前文件夹初始化为git仓库
+$ git add <file>
+    git add 将文件添加到缓冲区
+$ git commit -m <message>
+    git commit 将缓冲区文件提交到仓库 -m 添加操作备注
+$ git status
+    git status 查看git状态
+$ git diff <file>
+    git diff 查看修改内容
+$ git log
+    git log 显示从最近到最远的提交日志
+$ git reset --hard commit_id
+    回退到上一个版本 上一个版本就是HEAD^，上上一个版本就是HEAD^^，上一百个版本就是HEAD~100，commit_id 退后到这次版本号
+$ git reflog
+    git reflog 查看操作日志
+$ git checkout --file
+    git checkout 丢弃工作区的修改，就是让这个文件回到最近一次git commit或git add时的状态，--很重要，没有--，就变成了“切换到另一个分支”的命令，用版本库里的版本替换工作区的版本
+$ git reset HEAD file
+    git reset HEAFD 把暂存区的修改撤销掉
+$ rm file
+    删除文件
+$ git rm file
+    git中删除文件，删除的是缓冲区中文件
+
+
